@@ -1,0 +1,8 @@
+numpy
+matplotlib
+pillow
+pandas
+tqdm
+pydantic
+pyyaml
+ipywidgets>=8.0,<9
