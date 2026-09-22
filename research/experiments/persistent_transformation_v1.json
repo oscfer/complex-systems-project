@@ -1,0 +1,225 @@
+{
+  "contract_version": "persistent-transformation-v1",
+  "state_support_fraction": 0.75,
+  "state_mean_threshold": 0.5,
+  "destination_sign": -1,
+  "holding_duration": 100.0,
+  "release_deadline": 20.0,
+  "horizon": 320.0,
+  "reliability_target": 0.8,
+  "cells": [
+    {
+      "id": "c0",
+      "core_prior_mass": 0.35,
+      "between_affinity": 0.05
+    },
+    {
+      "id": "c1",
+      "core_prior_mass": 0.35,
+      "between_affinity": 0.5
+    },
+    {
+      "id": "c2",
+      "core_prior_mass": 0.7,
+      "between_affinity": 0.05
+    },
+    {
+      "id": "c3",
+      "core_prior_mass": 0.7,
+      "between_affinity": 0.5
+    }
+  ],
+  "development": [
+    {
+      "origin_id": "development_00",
+      "cell_id": "c0",
+      "seed": 2678435231
+    },
+    {
+      "origin_id": "development_01",
+      "cell_id": "c1",
+      "seed": 1656358726
+    },
+    {
+      "origin_id": "development_02",
+      "cell_id": "c2",
+      "seed": 3070382900
+    },
+    {
+      "origin_id": "development_03",
+      "cell_id": "c3",
+      "seed": 1555250066
+    }
+  ],
+  "selection": [
+    {
+      "origin_id": "selection_00",
+      "cell_id": "c0",
+      "seed": 2623696267
+    },
+    {
+      "origin_id": "selection_01",
+      "cell_id": "c1",
+      "seed": 1745076560
+    },
+    {
+      "origin_id": "selection_02",
+      "cell_id": "c2",
+      "seed": 3355709794
+    },
+    {
+      "origin_id": "selection_03",
+      "cell_id": "c3",
+      "seed": 3549472194
+    },
+    {
+      "origin_id": "selection_04",
+      "cell_id": "c0",
+      "seed": 3898228275
+    },
+    {
+      "origin_id": "selection_05",
+      "cell_id": "c1",
+      "seed": 3598004714
+    }
+  ],
+  "confirmation": "Freeze fresh origin allocation at M5; no confirmation draws yet.",
+  "packages": [
+    {
+      "id": "original",
+      "accessible_fraction": 0.25,
+      "distinct_fraction": 0.1,
+      "exposure_per_node": 8.0,
+      "amplitude_cap": 4.0
+    },
+    {
+      "id": "wider",
+      "accessible_fraction": 0.25,
+      "distinct_fraction": 0.25,
+      "exposure_per_node": 20.0,
+      "amplitude_cap": 4.0
+    },
+    {
+      "id": "broad_diagnostic",
+      "accessible_fraction": 1.0,
+      "distinct_fraction": 1.0,
+      "exposure_per_node": 80.0,
+      "amplitude_cap": 4.0
+    }
+  ],
+  "policies": [
+    "zero",
+    "random_sustained_1",
+    "attention_sustained_1",
+    "attention_sustained_4",
+    "attention_shutoff_1"
+  ],
+  "initial_condition_families": [
+    "tiered_reference",
+    "synthetic_v1"
+  ],
+  "reference_pilot": {
+    "origin_id": "development_00",
+    "package": "original",
+    "policies": [
+      "zero",
+      "random_sustained_1",
+      "attention_sustained_1",
+      "attention_sustained_4",
+      "attention_shutoff_1"
+    ],
+    "continuations": 5
+  },
+  "optional_policies": {
+    "combined_broadcast_08_boost_2": {
+      "broadcast_amplitude": 0.8,
+      "nominal_amplitude": 2.0,
+      "node_fraction": 0.1,
+      "selector": "reported_attention",
+      "duration": 20.0,
+      "is_feedback": false,
+      "initial_recruitment_fraction": 1.0,
+      "roster_selection": true
+    },
+    "low_attention_sustained_4": {
+      "selector": "reported_low_attention",
+      "nominal_amplitude": 4.0,
+      "duration": 20.0,
+      "is_feedback": false,
+      "initial_recruitment_fraction": 1.0,
+      "roster_selection": true
+    },
+    "high_attention_two_sustained_4": {
+      "selector": "reported_attention",
+      "nominal_amplitude": 4.0,
+      "duration": 20.0,
+      "is_feedback": false,
+      "initial_recruitment_fraction": 1.0,
+      "roster_selection": true,
+      "node_fraction": 0.05
+    },
+    "low_attention_two_sustained_4": {
+      "selector": "reported_low_attention",
+      "nominal_amplitude": 4.0,
+      "duration": 20.0,
+      "is_feedback": false,
+      "initial_recruitment_fraction": 1.0,
+      "roster_selection": true,
+      "node_fraction": 0.05
+    },
+    "random_half_sustained_1": {
+      "selector": "random",
+      "nominal_amplitude": 1.0,
+      "duration": 20.0,
+      "node_fraction": 0.5,
+      "is_feedback": false,
+      "initial_recruitment_fraction": 1.0,
+      "roster_selection": true
+    },
+    "random_half_sustained_2": {
+      "selector": "random",
+      "nominal_amplitude": 2.0,
+      "duration": 20.0,
+      "node_fraction": 0.5,
+      "is_feedback": false,
+      "initial_recruitment_fraction": 1.0,
+      "roster_selection": true
+    },
+    "random_quarter_sustained_2": {
+      "selector": "random",
+      "nominal_amplitude": 2.0,
+      "duration": 20.0,
+      "node_fraction": 0.25,
+      "is_feedback": false,
+      "initial_recruitment_fraction": 1.0,
+      "roster_selection": true
+    },
+    "random_quarter_sustained_4": {
+      "selector": "random",
+      "nominal_amplitude": 4.0,
+      "duration": 20.0,
+      "node_fraction": 0.25,
+      "is_feedback": false,
+      "initial_recruitment_fraction": 1.0,
+      "roster_selection": true
+    },
+    "high_attention_ten_sustained_2": {
+      "selector": "reported_attention",
+      "nominal_amplitude": 2.0,
+      "duration": 20.0,
+      "node_fraction": 0.25,
+      "is_feedback": false,
+      "initial_recruitment_fraction": 1.0,
+      "roster_selection": true
+    },
+    "low_attention_ten_sustained_2": {
+      "selector": "reported_low_attention",
+      "nominal_amplitude": 2.0,
+      "duration": 20.0,
+      "node_fraction": 0.25,
+      "is_feedback": false,
+      "initial_recruitment_fraction": 1.0,
+      "roster_selection": true
+    }
+  }
+}

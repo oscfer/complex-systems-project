@@ -1,0 +1,84 @@
+{
+  "classification": "non_equivalent_positive_temperature",
+  "ndlib_version": "6.0.1",
+  "ndlib_wheel_sha256": "3e1fe7426cfb00a1dc0b96c54aadace49744c91259736db9eab56f0e6c171346",
+  "ndlib_execution": false,
+  "method": "Exact enumeration of inspected reference rule, not installed package execution",
+  "states": [
+    [
+      -1,
+      -1
+    ],
+    [
+      -1,
+      1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "qvoter_q1_transition_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.5,
+      0.0,
+      0.0,
+      0.5
+    ],
+    [
+      0.5,
+      0.0,
+      0.0,
+      0.5
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "heatbath_T_0_3_transition_matrix": [
+    [
+      0.9987289837369187,
+      0.000635508131540679,
+      0.000635508131540679,
+      0.0
+    ],
+    [
+      0.4993644918684593,
+      0.001271016263081353,
+      0.0,
+      0.4993644918684593
+    ],
+    [
+      0.4993644918684593,
+      0.0,
+      0.001271016263081353,
+      0.4993644918684593
+    ],
+    [
+      0.0,
+      0.0006355081315406741,
+      0.0006355081315406741,
+      0.9987289837369187
+    ]
+  ],
+  "row_total_variation": [
+    0.001271016263081353,
+    0.0012710162630813506,
+    0.0012710162630813506,
+    0.0012710162630813482
+  ],
+  "scope": "Two nodes, one symmetric unit edge, public-only updates, J=1, K=b=u=0, frozen graph; conditional on one public update. Not the full production model."
+}

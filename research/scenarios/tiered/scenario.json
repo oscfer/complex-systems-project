@@ -1,0 +1,235 @@
+{
+  "focal_proposition": "continued expansion of a contested activity (+1) versus slowdown/restriction (-1)",
+  "aggregation": "model-agent majority",
+  "tiers": [
+    {
+      "id": 1,
+      "name": "Gatekeepers and infrastructure",
+      "model_share": 0.15,
+      "roles": [
+        {
+          "name": "States/regulators",
+          "jurisdiction_shares": [0.40, 0.25, 0.15, 0.20, 0.0, 0.0]
+        },
+        {
+          "name": "component suppliers",
+          "jurisdiction_shares": [0.35, 0.20, 0.10, 0.10, 0.10, 0.15]
+        },
+        {
+          "name": "utilities/energy",
+          "jurisdiction_shares": [0.30, 0.20, 0.15, 0.10, 0.10, 0.15]
+        }
+      ],
+      "attention_prior": 0.7,
+      "pilot_public_plus1_prob": 0.8,
+      "pilot_private_public_gap_prob": 0.1,
+      "contextual_attributes": {
+        "material_power": "high",
+        "information_advantage": "high",
+        "coordination": "medium",
+        "risk_exposure": "medium",
+        "exit_power": "high"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Leading developers",
+      "model_share": 0.1,
+      "roles": [
+        {
+          "name": "Lead developers",
+          "jurisdiction_shares": [0.45, 0.20, 0.10, 0.05, 0.10, 0.10]
+        },
+        {
+          "name": "distributors",
+          "jurisdiction_shares": [0.30, 0.15, 0.15, 0.10, 0.15, 0.15]
+        }
+      ],
+      "attention_prior": 0.7,
+      "pilot_public_plus1_prob": 0.85,
+      "pilot_private_public_gap_prob": 0.15,
+      "contextual_attributes": {
+        "material_power": "high",
+        "information_advantage": "high",
+        "coordination": "high",
+        "risk_exposure": "medium",
+        "exit_power": "high"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Capital and deployers",
+      "model_share": 0.15,
+      "roles": [
+        {
+          "name": "Investors",
+          "jurisdiction_shares": [0.35, 0.10, 0.15, 0.10, 0.20, 0.10]
+        },
+        {
+          "name": "enterprise/public deployers",
+          "jurisdiction_shares": [0.25, 0.10, 0.15, 0.10, 0.15, 0.25]
+        }
+      ],
+      "attention_prior": 0.7,
+      "pilot_public_plus1_prob": 0.75,
+      "pilot_private_public_gap_prob": 0.1,
+      "contextual_attributes": {
+        "material_power": "high",
+        "information_advantage": "medium",
+        "coordination": "medium",
+        "risk_exposure": "medium",
+        "exit_power": "high"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Institutional intermediaries",
+      "model_share": 0.15,
+      "roles": [
+        {
+          "name": "Researchers",
+          "jurisdiction_shares": [0.30, 0.10, 0.20, 0.05, 0.25, 0.10]
+        },
+        {
+          "name": "standards",
+          "jurisdiction_shares": [0.20, 0.10, 0.25, 0.10, 0.25, 0.10]
+        },
+        {
+          "name": "auditors",
+          "jurisdiction_shares": [0.25, 0.05, 0.20, 0.10, 0.15, 0.25]
+        },
+        {
+          "name": "media",
+          "jurisdiction_shares": [0.25, 0.05, 0.15, 0.15, 0.10, 0.30]
+        },
+        {
+          "name": "unions/civil society",
+          "jurisdiction_shares": [0.20, 0.00, 0.20, 0.20, 0.05, 0.35]
+        }
+      ],
+      "attention_prior": 0.3,
+      "pilot_public_plus1_prob": 0.45,
+      "pilot_private_public_gap_prob": 0.1,
+      "contextual_attributes": {
+        "material_power": "medium",
+        "information_advantage": "medium",
+        "coordination": "medium",
+        "risk_exposure": "medium",
+        "exit_power": "medium"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Abundant periphery",
+      "model_share": 0.45,
+      "roles": [
+        {
+          "name": "Workers",
+          "jurisdiction_shares": [0.15, 0.10, 0.10, 0.20, 0.00, 0.45]
+        },
+        {
+          "name": "users",
+          "jurisdiction_shares": [0.15, 0.10, 0.10, 0.20, 0.05, 0.40]
+        },
+        {
+          "name": "educators",
+          "jurisdiction_shares": [0.15, 0.05, 0.10, 0.15, 0.05, 0.50]
+        },
+        {
+          "name": "creators",
+          "jurisdiction_shares": [0.20, 0.05, 0.10, 0.15, 0.10, 0.40]
+        },
+        {
+          "name": "local communities",
+          "jurisdiction_shares": [0.10, 0.05, 0.05, 0.30, 0.00, 0.50]
+        },
+        {
+          "name": "other countries",
+          "jurisdiction_shares": [0.00, 0.00, 0.00, 0.60, 0.10, 0.30]
+        }
+      ],
+      "attention_prior": 0.3,
+      "pilot_public_plus1_prob": 0.55,
+      "pilot_private_public_gap_prob": 0.15,
+      "contextual_attributes": {
+        "material_power": "low",
+        "information_advantage": "low",
+        "coordination": "low",
+        "risk_exposure": "high",
+        "exit_power": "low"
+      }
+    }
+  ],
+  "jurisdictions": [
+    {
+      "name": "Region A",
+      "share": 0.2,
+      "kind": "named"
+    },
+    {
+      "name": "Region B",
+      "share": 0.125,
+      "kind": "named"
+    },
+    {
+      "name": "Region C",
+      "share": 0.1,
+      "kind": "named"
+    },
+    {
+      "name": "other states/regions",
+      "share": 0.125,
+      "kind": "named"
+    },
+    {
+      "name": "transnational",
+      "share": 0.25,
+      "kind": "transnational",
+      "declaration": "Declared global-reach attribute: the actor is documented as operating across jurisdictions (e.g. standards bodies, multinationals, global platforms). It is an explicit membership attribute, not a leftover catch-all for missing data."
+    },
+    {
+      "name": "unspecified/missing",
+      "share": 0.2,
+      "kind": "unspecified",
+      "declaration": "Declared missing-jurisdiction attribute: the actor's jurisdiction is unknown in the source mapping. Missing data is an explicit declared label and must not be treated as a shared community."
+    }
+  ],
+  "jurisdiction_share_notes": "Shares are synthetic pilot priors over declared labels. The former 0.45 transnational/unspecified catch-all is split into 0.25 declared transnational and 0.20 declared unspecified/missing.",
+  "schema_version": 2,
+  "schema_notes": {
+    "v2_changes": [
+      "Each role declares an explicit jurisdiction distribution; (role, jurisdiction) pairs are allocated jointly by largest remainders instead of shuffling jurisdictions independently across all agents.",
+      "The former 'transnational/unspecified' jurisdiction label is split into 'transnational' (declared global-reach attribute) and 'unspecified/missing' (declared missing-jurisdiction attribute); neither forms a privileged encounter community.",
+      "Encounter opportunity uses declared pairwise jurisdiction affinities, and initial W construction applies the same affinity weighting as ongoing encounters.",
+      "Persistent structural asymmetry decision recorded explicitly (see persistent_structural_asymmetry)."
+    ]
+  },
+  "numeric_status": "pilot_assumptions_not_empirical_calibration",
+  "core_attention_share": 0.7,
+  "memory_draws_per_row": 20,
+  "memory_capacity_per_row": 40,
+  "opportunity": {
+    "grouping": "declared_jurisdiction_pair_affinity",
+    "within_jurisdiction": 1.0,
+    "between_jurisdictions": 0.05,
+    "transnational_affinity_to_any": 0.2,
+    "unspecified_affinity_to_any": 0.15,
+    "initial_memory_uses_affinity": true,
+    "affinity_rule": "same named jurisdiction: within_jurisdiction; different named jurisdictions: between_jurisdictions; any pair involving a transnational actor (including transnational-transnational): transnational_affinity_to_any; any pair involving an unspecified/missing actor (including unspecified-unspecified): unspecified_affinity_to_any. Missing or ambiguous jurisdiction therefore confers no within-community bonus; genuinely transnational actors get a moderate open affinity in both directions reflecting global spread rather than co-location.",
+    "initial_ongoing_consistency": "The same pairwise affinity matrix C is used both to weight within-group allocation of initial memory W at t=0 and to weight ongoing encounter target selection. Initial tie formation and later tie formation therefore follow one declared opportunity structure; the previous initial-W/encounter-C mismatch is resolved by construction.",
+    "status": "active_pilot_assumption"
+  },
+  "persistent_structural_asymmetry": {
+    "decision": "no_persistent_mechanism",
+    "decision_version": 1,
+    "reasoning": [
+      "The five power attributes (material_power, information_advantage, coordination, risk_exposure, exit_power) are ordinal scenario descriptors with no measured conversion to dynamic parameters and no measurement model is used to calibrate a role-based persistent opportunity or attention component.",
+      "Adding a persistent role-based mechanism without such a conversion would import an invented structural law; structural choices should not depend on which variant reverses the majority.",
+      "The observed decline of core received-attention share under adaptive memory is a real model outcome to be measured and reported, not a defect to be patched by a persistent clamp; no 70% attention clamp is imposed.",
+      "Roles therefore remain contextual in this experiment: they affect tier labeling and the initial probability/affinity structure only. The five power attributes stay contextual_only and must not be interpreted as active mechanisms."
+    ],
+    "attribute_status": "contextual_only",
+    "interpretation_rules": "W is remembered interaction volume, not money; quenched trait g is susceptibility, not power; plot size encodes received attention, not supplier leverage; no core attention clamp to 70%.",
+    "uncontrolled_dynamics_check": "tests/unit/test_f2_scenario_structure.py runs a small-N uncontrolled rollout and records the core received-attention-share trajectory as a smoke/diagnostic; it asserts only that the dynamics run and stay bounded, not that any share is maintained."
+  }
+}
